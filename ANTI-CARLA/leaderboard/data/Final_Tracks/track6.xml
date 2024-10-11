@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+  <route id="6" town="Town05">
+    <weather cloudiness="3" fog_density="0" fog_distance="0" precipitation="46" precipitation_deposits="31" sun_altitude_angle="54" sun_azimuth_angle="0" wetness="0" wind_intensity="0" />
+    <waypoint x="56.449505" y="205.120041" z="0.953773" pitch="-6.351167" roll="0.000056" yaw="3.302968"/>
+    <waypoint x="185.469559" y="160.977905" z="0.930790" pitch="-7.202366" yaw="-47.779034" roll="0.000022"/>
+    <waypoint x="206.643692" y="3.123415" z="0.933814" pitch="-14.739247" yaw="-89.334290" roll="0.000085"/>
+    <waypoint x="164.630737" y="-181.918564" z="0.992506" pitch="-2.125486" yaw="-145.816818" roll="0.000111"/>
+    <waypoint x="6.154616" y="-203.370819" z="0.198345" pitch="4.785982" yaw="-178.974579" roll="0.000136"/>
+    <waypoint x="-199.338943" y="-185.470322" z="10.738243" pitch="-2.216792" yaw="146.917709" roll="0.000153"/>
+    <waypoint x="-242.759460" y="24.318798" z="10.116696" pitch="-6.149260" yaw="89.251144" roll="0.000172"/>
+    <waypoint x="-215.461349" y="174.830856" z="10.003971" pitch="-4.948636" yaw="39.067104" roll="0.000226"/>
+    <waypoint x="-85.964157" y="204.619308" z="8.122655" pitch="-15.219750" yaw="2.806315" roll="0.000229"/>
+    <waypoint x="56.449505" y="205.120041" z="0.953773" pitch="-6.351167" yaw="3.302968" roll="0.000056"/>
+  </route>
+</routes>

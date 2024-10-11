@@ -1,0 +1,18 @@
+switch to autopilot:10.05000014975667
+160.30000238865614
+End
+
+switch to autopilot:12.050000179558992
+160.30000238865614
+End
+
+switch to autopilot:10.55000015720725
+switch to autopilot:10.55000015720725
+switch to autopilot:10.55000015720725
+switch to autopilot:10.55000015720725
+End
+
+End
+
+End
+

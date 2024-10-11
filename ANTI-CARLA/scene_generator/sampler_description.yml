@@ -1,0 +1,9 @@
+#This is the sampler description file. A sampler drives the test case generation
+Name: Sampler Description File
+Samplers: #The available sensors
+    Manual: true # Manual sampler requires parameters to be manually entered in this file
+    Random: false # Randomly samples the selected parameters
+    Halton: false # Pseudo random sampler
+    Grid: false # Grid sampler
+    Random_Neighborhood_Search: false # Active random sampler that uses previous performance of the system in sampling parameters for the next scene
+    Guided_Bayesian_Optimization: false # Bayesian optimization sampler with constraints included

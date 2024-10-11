@@ -1,0 +1,25 @@
+DeepLabV3:
+  OutputStride: 16
+  Backbone:
+    mobilenetv2:
+      Tag: M2
+      TrainPatchSize: 513
+      TrainBatchSize: 2
+      EvalBatchSize: 1
+    mobilenetv3:
+      Tag: M3
+      TrainPatchSize: 513
+      TrainBatchSize: 4
+      EvalBatchSize: 2
+    xception:
+      Tag: X
+      TrainPatchSize: 513
+      TrainBatchSize: 4
+      EvalBatchSize: 2
+    resnet:
+      Tag: R
+      TrainPatchSize: 513
+      TrainBatchSize: 4
+      EvalBatchSize: 2
+
+  

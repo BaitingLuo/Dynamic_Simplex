@@ -1,0 +1,6 @@
+Checkpoint savefiles are saved in this folder. 
+CP savefile is named as {model_tag}{output_stride}{backbone_tag}-{epoch}.tar
+The model handler will find a saved CP file corresponding to the name and highest trainig epoch.
+Since the introspection models use the error labels, you must train the baseline model and generate error labels first.
+For PARALLEL introspection model, it can be initialized without baseline CP. This model does not require the baseline model parameters.
+For RELIANT introspection model, baseline CP must be given to initialize the model since it requires the encoder parameters of the base line model in the SAME network structure(backbone model and output stride).

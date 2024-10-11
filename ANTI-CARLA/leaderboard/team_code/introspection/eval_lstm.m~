@@ -1,0 +1,47 @@
+p = csvread('./predictions_val.csv');
+l = csvread('./labels_val.csv');
+
+p = softmax(p')';
+
+n_seq = size(p,1)/200;
+
+p = reshape(p(:,2), 200,n_seq);
+l = reshape(l, 200, n_seq);
+
+p_f = p;
+p_d = p;
+
+thresh = 0.5;
+
+for i=1:size(p,2)
+    p_f_i = movmean(p(:,i),[60 0]);
+    p_f(:,i) = p_f_i;    
+    p_f_i(p_f_i>thresh) = 1;
+    p_f_i(p_f_i<=thresh) = 0;
+    p_d(:,i) = p_f_i;
+end
+
+[X,Y,T,AUC] = perfcurve(l(:),p(:),1);
+[X,Y,T,AUC_f] = perfcurve(l(:),p_f(:),1);
+
+
+e = abs(l-p_d);
+
+i_fail = find(l(1,:)==1);
+i_success = find(l(1,:) == 0);
+
+figure
+e_fail = zeros(200,1);
+for i=1:size(i_fail,2)
+    e_fail = e_fail + e(:,i_fail(i));
+end
+e_fail = e_fail/size(i_fail,2);
+plot(e_fail)
+
+figure
+e_fail = zeros(200,1);
+for i=1:size(i_fail,2)
+    e_fail = e_fail + e(:,i_fail(i));
+end
+e_fail = e_fail/size(i_fail,2);
+plot(e_fail)

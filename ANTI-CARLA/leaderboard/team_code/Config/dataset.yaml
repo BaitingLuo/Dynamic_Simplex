@@ -1,0 +1,15 @@
+CARLA:
+  BaseTrain:
+    Image: trainSemantic/image
+    Label: trainSemantic/label
+  IntroTrain:
+    Image: trainIntrospection/image
+    Label: trainIntrospection/label
+  Validation:
+    Image: val/image
+    Label: val/label
+  Test:
+    Image: test/image
+    Label: test/label
+  OutputClasses: 13
+  VoidClasses: 1
